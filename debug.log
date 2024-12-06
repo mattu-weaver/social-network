@@ -1,0 +1,74 @@
+
+2024 11 16 10:11:99 | INFO | main | Line 30 | hello
+2024 11 16 10:11:05 | INFO | main | Line 30 | wassap
+2024 11 16 10:11:32 | INFO | render_page | Line 34 | No file was uploaded
+2024 11 16 10:11:74 | INFO | render_page | Line 35 | No file was uploaded
+2024 11 16 10:11:68 | INFO | render_page | Line 35 | No file was uploaded
+2024 11 16 10:11:61 | INFO | render_page | Line 35 | No file was uploaded
+2024 11 16 10:11:59 | INFO | render_page | Line 35 | No file was uploaded
+2024 11 16 10:11:12 | INFO | render_page | Line 32 | titanic.csv
+2024 11 16 10:11:80 | INFO | render_page | Line 35 | No file was uploaded
+2024 11 16 10:11:05 | INFO | render_page | Line 32 | The following file was uploaded: titanic.csv
+2024 11 18 09:11:55 | INFO | render_page | Line 35 | No file was uploaded
+2024 11 18 09:11:39 | INFO | render_page | Line 35 | No file was uploaded
+2024 11 19 16:11:70 | INFO | render_page | Line 35 | No file was uploaded
+2024 11 19 16:11:75 | INFO | render_page | Line 32 | The following file was uploaded: titanic.csv
+2024 11 19 16:11:13 | INFO | render_page | Line 32 | The following file was uploaded: titanic.csv
+2024 11 19 16:11:25 | INFO | render_page | Line 32 | The following file was uploaded: titanic.csv
+2024 11 19 16:11:22 | INFO | render_page | Line 42 | No file was uploaded
+2024 11 19 16:11:45 | INFO | render_page | Line 45 | No file was uploaded
+2024 11 19 16:11:66 | INFO | render_page | Line 52 | No file was uploaded
+2024 11 19 16:11:07 | INFO | render_page | Line 54 | No file was uploaded
+2024 11 19 16:11:21 | INFO | render_page | Line 54 | No file was uploaded
+2024 11 19 16:11:08 | INFO | render_page | Line 54 | No file was uploaded
+2024 11 19 16:11:05 | INFO | render_page | Line 54 | No file was uploaded
+2024 11 19 16:11:82 | INFO | render_page | Line 54 | No file was uploaded
+2024 11 19 16:11:88 | INFO | render_page | Line 54 | No file was uploaded
+2024 11 19 16:11:40 | INFO | render_page | Line 54 | No file was uploaded
+2024 11 19 16:11:81 | INFO | render_page | Line 54 | No file was uploaded
+2024 11 19 16:11:92 | INFO | render_page | Line 54 | No file was uploaded
+2024 11 19 16:11:52 | INFO | render_page | Line 55 | No file was uploaded
+2024 11 19 16:11:23 | INFO | render_page | Line 57 | No file was uploaded
+2024 11 19 16:11:74 | INFO | render_page | Line 57 | No file was uploaded
+2024 11 19 16:11:26 | INFO | render_page | Line 57 | No file was uploaded
+2024 11 19 16:11:86 | INFO | render_page | Line 57 | No file was uploaded
+2024 11 19 16:11:89 | INFO | render_page | Line 57 | No file was uploaded
+2024 11 19 16:11:68 | INFO | render_page | Line 57 | No file was uploaded
+2024 11 19 16:11:10 | INFO | render_page | Line 57 | No file was uploaded
+2024 11 19 16:11:05 | INFO | render_page | Line 57 | No file was uploaded
+2024 11 19 16:11:80 | INFO | render_page | Line 58 | No file was uploaded
+2024 11 19 16:11:84 | INFO | render_page | Line 58 | No file was uploaded
+2024 11 19 16:11:90 | INFO | render_page | Line 58 | No file was uploaded
+2024 11 19 16:11:07 | INFO | render_page | Line 57 | No file was uploaded
+2024 11 19 16:11:77 | INFO | render_page | Line 56 | No file was uploaded
+2024 11 19 16:11:28 | INFO | render_page | Line 56 | No file was uploaded
+2024 11 19 16:11:14 | INFO | render_page | Line 56 | No file was uploaded
+2024 11 19 16:11:60 | INFO | render_page | Line 56 | No file was uploaded
+2024 11 19 16:11:48 | INFO | render_page | Line 56 | No file was uploaded
+2024 11 19 16:11:17 | INFO | render_page | Line 58 | No file was uploaded
+2024 11 19 16:11:58 | INFO | render_page | Line 58 | No file was uploaded
+2024 11 19 16:11:00 | INFO | render_page | Line 58 | No file was uploaded
+2024 11 19 16:11:07 | INFO | render_page | Line 48 | The following file was uploaded: titanic.csv
+2024 11 19 16:11:51 | INFO | render_page | Line 48 | The following file was uploaded: titanic.csv
+2024 11 19 16:11:65 | INFO | render_page | Line 48 | The following file was uploaded: titanic.csv
+2024 11 19 16:11:66 | INFO | render_page | Line 55 | Description for Name: The name of the passenger on the ship.
+2024 11 19 16:11:34 | INFO | render_page | Line 58 | No file was uploaded
+2024 12 06 08:12:53 | INFO | render_page | Line 58 | No file was uploaded
+2024 12 06 09:12:70 | INFO | render_page | Line 58 | No file was uploaded
+2024 12 06 09:12:18 | INFO | render_page | Line 58 | No file was uploaded
+2024 12 06 09:12:76 | INFO | render_page | Line 58 | No file was uploaded
+2024 12 06 09:12:30 | INFO | render_page | Line 58 | No file was uploaded
+2024 12 06 09:12:49 | INFO | render_page | Line 58 | No file was uploaded
+2024 12 06 10:12:15 | INFO | render_page | Line 58 | No file was uploaded
+2024 12 06 11:12:46 | INFO | render_page | Line 58 | No file was uploaded
+2024 12 06 11:12:37 | INFO | render_page | Line 58 | No file was uploaded
+2024 12 06 12:12:87 | INFO | render_page | Line 58 | No file was uploaded
+2024 12 06 12:12:31 | INFO | render_page | Line 58 | No file was uploaded
+2024 12 06 12:12:86 | INFO | render_page | Line 58 | No file was uploaded
+2024 12 06 12:12:33 | INFO | render_page | Line 58 | No file was uploaded
+2024 12 06 12:12:76 | INFO | render_page | Line 58 | No file was uploaded
+2024 12 06 12:12:35 | INFO | render_page | Line 58 | No file was uploaded
+2024 12 06 13:12:86 | INFO | render_page | Line 58 | No file was uploaded
+2024 12 06 14:12:95 | INFO | render_page | Line 58 | No file was uploaded
+2024 12 06 14:12:28 | INFO | render_page | Line 58 | No file was uploaded
+2024 12 06 14:12:18 | INFO | render_page | Line 58 | No file was uploaded

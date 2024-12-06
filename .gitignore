@@ -1,0 +1,17 @@
+.idea/misc.xml
+.idea/modules.xml
+.idea/StreamlitBase.iml
+.idea/vcs.xml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/inspectionProfiles/Project_Default.xml
+__pycache__/utils.cpython-311.pyc
+data/titanic.csv
+models/models.py
+views/__init__.py
+views/__pycache__/__init__.cpython-311.pyc
+views/__pycache__/BasePage.cpython-311.pyc
+views/__pycache__/DataLoadPage.cpython-311.pyc
+views/__pycache__/FriendshipPage.cpython-311.pyc
+views/__pycache__/OtherPage.cpython-311.pyc
+views/__pycache__/Page.cpython-311.pyc
+views/__pycache__/pages.cpython-311.pyc

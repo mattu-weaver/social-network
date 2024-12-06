@@ -1,0 +1,11 @@
+# Logging levels for loguru
+# TRACE (most verbose)
+# DEBUG
+# INFO
+# SUCCESS
+# WARNING
+# ERROR
+# CRITICAL (most severe)
+[logger]
+level = 'INFO'
+format = '{time:YYYY MM DD HH:MM:SS} | {level} | {function} | Line {line} | {message}'
