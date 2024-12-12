@@ -47,20 +47,12 @@ class FriendshipPage(Page):
 
         self.graph = self.generate_random_network()
         self.friends_count = self.calculate_friends_count()
-        self.friends_of_friends = self.calculate_friends_of_friends(self.friends_count)
+        self.friends_of_friends = self.calculate_friends_of_friends_count(self.friends_count)
         self.average_friends = np.mean(list(self.friends_count.values()))
         self.avg_friends_of_friends = np.mean(list(self.friends_of_friends.values()))
 
         fig = self.visualise_network()
         st.pyplot(fig)
-
-        col1, col2 = st.columns(2)
-
-        with col1:
-            self.draw_mean_trend()
-
-        with col2:
-            self.display_violin_plot()
 
         st.sidebar.write(f'Each friend has an average of {self.average_friends:.1f} connections.')
         st.sidebar.write(f"Each friend's friend has an average of {self.avg_friends_of_friends:.1f} connections.")
@@ -106,7 +98,7 @@ class FriendshipPage(Page):
         return {node: len(self.graph[node]) for node in self.graph}
 
 
-    def calculate_friends_of_friends(self, friends_count):
+    def calculate_friends_of_friends_count(self, friends_count):
         """
         Calculate the average number of friends each person's friends have.
         """
@@ -125,7 +117,7 @@ class FriendshipPage(Page):
     
     def visualise_network(self):
         """
-        Visualizes the network graph with nodes colored based on their degree centrality.
+        Visualises the network graph with nodes colored based on their degree centrality.
         Dynamically adjusts text color for better readability.
         
         Returns:
@@ -182,78 +174,3 @@ class FriendshipPage(Page):
 
         return fig
 
-    def display_violin_plot(self):
-        """
-        Displays a violin plot for friends and friends of friends distributions
-        and adds horizontal lines at the median values.
-        """
-        # Prepare data for violin plot
-        data = {
-            'Friends': list(self.friends_count.values()),
-            'Friends of Friends': list(self.friends_of_friends.values())
-        }
-        df = pd.DataFrame(data).melt(var_name='Metric', value_name='Count')
-
-        # Calculate medians for each metric
-        medians = df.groupby('Metric')['Count'].median()
-
-        # Create violin plot
-        fig, ax = plt.subplots(figsize=(10, 7))
-        sns.violinplot(x='Metric', y='Count', data=df, palette='muted', ax=ax)
-
-        # Add horizontal lines for medians
-        for metric, median in medians.items():
-            ax.axhline(y=median, color='red', linestyle='--', linewidth=3,
-                       label=f'{metric} Median: {median:.2f}')
-            ax.text(-0.3, median,  # Adjust position to the left
-                    f"{metric} Median: {median:.2f}",
-                    color='black', fontsize=18, ha='left', va='center')
-
-        # Add chart elements
-        ax.set_title('Distributions of Friends and Friends of Friends connections', fontsize=20)
-        ax.set_xlabel('Metric', fontsize=18)
-        ax.set_ylabel('Count', fontsize=18)
-        ax.tick_params(axis='x', labelsize=18)
-        ax.tick_params(axis='y', labelsize=18)
-        plt.tight_layout()
-
-        # Display the plot in Streamlit
-        st.pyplot(fig)
-
-
-    def draw_mean_trend(self):
-        """
-        Draws a trend chart comparing the means of friends and friends of friends.
-        """
-        # Calculate the mean values
-        mean_friends = np.mean(list(self.friends_count.values()))
-        mean_friends_of_friends = np.mean(list(self.friends_of_friends.values()))
-        
-        # Prepare data for the trend
-        trend_data = pd.DataFrame({
-            'Metric': ['Friends', 'Friends of Friends'],
-            'Mean Count': [mean_friends, mean_friends_of_friends]
-        })
-
-        # Create a figure object
-        fig, ax = plt.subplots(figsize=(10, 7))
-
-        # Plot a bar chart or line chart to show the trend
-        sns.barplot(data=trend_data, x='Metric', y='Mean Count', palette='muted', ax=ax)
-        
-        # Add data labels for clarity
-        for i, value in enumerate(trend_data['Mean Count']):
-            ax.text(i, value - 1.0, f'{value:.2f}', ha='center', fontsize=18)
-
-        # Customize the plot
-        ax.set_title('Mean Comparison: Friends vs Friends of Friends', fontsize=20)
-        ax.set_xlabel('Metric', fontsize=18)
-        ax.set_ylabel('Mean Count', fontsize=18)
-        ax.tick_params(axis='x', labelsize=18)
-        ax.tick_params(axis='y', labelsize=18)
-
-        # Adjust layout
-        plt.tight_layout()
-
-        # Explicitly pass the figure to Streamlit
-        st.pyplot(fig)
